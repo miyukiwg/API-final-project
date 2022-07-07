@@ -12,6 +12,7 @@
 ## 五、详细功能介绍
 Agile的功能详细功能在以下表格和图片中呈现。
 ### （一）功能列表
+
 <table>
    <tr>
       <td>用户界面模块</td>
@@ -87,7 +88,7 @@ Agile的功能详细功能在以下表格和图片中呈现。
       <td>显示用户参与或发起组队的信息</td>
    </tr>
    <tr>
-      <td style="text-align:center;">显示用户私信</td>
+      <td style="text-align:center;">用户私信</td>
       <td>显示用户收到其他人的私信</td>
    </tr>
    <tr>
@@ -180,6 +181,30 @@ Agile的功能详细功能在以下表格和图片中呈现。
       <td style="text-align:center;">支付</td>
       <td></td>
       <td>用户在完善预定信息后支付订单</td>
+   </tr>
+   <tr>
+      <td rowspan="5" style="text-align:center;">注册页</td>
+      <td style="text-align:center;">手机验证码登陆</td>
+      <td></td>
+      <td>用户可直接通过手机验证码注册、登陆</td>
+   </tr>
+   <tr>
+      <td rowspan="3" style="text-align:center;">其他账号登陆</td>
+      <td style="text-align:center;">QQ</td>
+      <td>用户可通过QQ账号一键登录</td>
+   </tr>
+   <tr>
+      <td style="text-align:center;">微信</td>
+      <td>用户可通过微信账号一键登录</td>
+   </tr>
+   <tr>
+      <td style="text-align:center;">Apple</td>
+      <td>用户可通过Apple账号一键登录</td>
+   </tr>
+   <tr>
+      <td style="text-align:center;">用户协议</td>
+      <td></td>
+      <td>用户使用APP前需了解并同意《用户协议》《用户隐私协议》</td>
    </tr>
 </table>
 
