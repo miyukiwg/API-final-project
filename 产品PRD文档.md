@@ -24,7 +24,7 @@ Agile的功能详细功能在以下表格和图片中呈现。
       <td rowspan="6" style="text-align:center;">首页</td>
       <td style="text-align:center;">Flash广告</td>
       <td></td>
-      <td>显示最近的热点新闻</td>
+      <td>显示场馆或其它广告</td>
    </tr>
    <tr>
       <td style="text-align:center;">地区选择</td>
