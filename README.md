@@ -350,6 +350,7 @@ if (content):
 }
 ```
 #### 2、[关键字搜索](https://market.aliyun.com/products/57002002/cmapi011038.html?spm=5176.730005.result.45.7ad2123eTuvQnN&innerSource=search_搜索#sku=yuncode503800001)
+根据用户提供的信息，查询经纬度位置及周边POI信息，返回每个地点分类下的多渠道整合。广泛应用于关键字搜索、周边搜索、可视区域查询、范围内查询、地址围栏等应用或服务。
 ##### 请求数据
 ```
 import urllib, urllib2, sys
@@ -370,7 +371,7 @@ content = response.read()
 if (content):
     print(content)
 ```
-##### 输出数据
+##### 返回数据
 ```
 {
 	"showapi_res_code": 0,
