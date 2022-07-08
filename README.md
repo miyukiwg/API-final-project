@@ -349,7 +349,54 @@ if (content):
   "status": "0"
 }
 ```
-#### 2、智能推荐
+#### 2、关键字搜索
+##### 请求数据
+```
+import urllib, urllib2, sys
+
+
+host = 'http://ali-poi.showapi.com'
+path = '/area-poi'
+method = 'GET'
+appcode = '你自己的AppCode'
+querys = 'page_num=1&page_size=1&q=%E9%93%B6%E8%A1%8C&region=%E5%8C%97%E4%BA%AC&scope=1'
+bodys = {}
+url = host + path + '?' + querys
+
+request = urllib2.Request(url)
+request.add_header('Authorization', 'APPCODE ' + appcode)
+response = urllib2.urlopen(request)
+content = response.read()
+if (content):
+    print(content)
+```
+##### 输出数据
+```
+{
+	"showapi_res_code": 0,
+	"showapi_res_error": "",
+	"showapi_res_body": {
+		"message": "ok",    //对API访问状态值的英文说明，如果成功返回
+		"total": 400,   //检索总数，用户请求中设置了page_num字段才会出现total字段。当检索总数值大于760时，多次刷新同一请求得到total的值可能稍有不同，属于正常情况。
+		"ret_code": 0,
+		"results": [
+			{
+				"street_id": "28e700f1ef7fc101095cb31d",    //
+				"uid": "28e700f1ef7fc101095cb31d",
+				"detail": 1,
+				"location": {
+					"lng": 116.420871,  //经度值
+					"lat": 40.083391    //纬度值
+				},
+				"address": "昌平区东小口镇天通北苑一区甲4号楼3门(近地铁5号楼天通苑站)",  //poi地址信息
+				"name": "中国建设银行(天通北苑支行)",   //poi名称
+				"telephone": "(010)81778101"      //poi电话信息
+			}    
+		],
+		"status": 0
+	}
+}
+```
 #### 3、人脸识别
 部分场馆可人脸识别入馆。
 
