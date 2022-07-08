@@ -241,8 +241,114 @@ Agile——运动场馆预约助手，是一款通过调用全国运动场馆位
 
 #### 2、原型界面
 #### 3、原型页面的流程图
-### （三）API调用
+### （三）API接口调用代码展示
 #### 1、运动场馆地址
+请求数据
+```
+import urllib, urllib2, sys
+import ssl
+
+
+host = 'https://getsport.market.alicloudapi.com'
+path = '/poidata/getSport'
+method = 'POST'
+appcode = '你自己的AppCode'
+querys = 'keyword=lq&page_num=page_num&page_size=page_size&region=%E5%8C%97%E4%BA%AC'
+bodys = {}
+url = host + path + '?' + querys
+
+request = urllib2.Request(url)
+request.add_header('Authorization', 'APPCODE ' + appcode)
+ctx = ssl.create_default_context()
+ctx.check_hostname = False
+ctx.verify_mode = ssl.CERT_NONE
+response = urllib2.urlopen(request, context=ctx)
+content = response.read()
+if (content):
+    print(content)
+```
+返回数据
+```
+{
+  "total": "8",
+  "message": "ok",
+  "results": [
+    {
+      "address": "太平桥大街学院小街2号北京八中内(近金融街)",
+      "name": "北京八中篮球馆",
+      "location": {
+        "lng": "116.361696",
+        "lat": "39.910480"
+      },
+      "telephone": ""
+    },
+    {
+      "address": "天坛东路9号",
+      "name": "天坛羽毛球篮球馆",
+      "location": {
+        "lng": "116.418041",
+        "lat": "39.880560"
+      },
+      "telephone": "67022401"
+    },
+    {
+      "address": "百子湾家园404号",
+      "name": "北京市第十七中学篮球馆",
+      "location": {
+        "lng": "116.509004",
+        "lat": "39.898753"
+      },
+      "telephone": "87517307"
+    },
+    {
+      "address": "永华路2号",
+      "name": "北京旅游专修学院篮球馆",
+      "location": {
+        "lng": "116.280890",
+        "lat": "39.720206"
+      },
+      "telephone": "61202266"
+    },
+    {
+      "address": "苏家坨镇草厂村486号(九王坟鹫峰凤凰岭方向)",
+      "name": "首体院凤凰岭校区羽毛球乒乓球篮球馆",
+      "location": {
+        "lng": "116.112580",
+        "lat": "40.078506"
+      },
+      "telephone": "62465564"
+    },
+    {
+      "address": "益泽路15号(近东方家园)",
+      "name": "十二中体育馆篮球馆游泳馆",
+      "location": {
+        "lng": "116.307812",
+        "lat": "39.862959"
+      },
+      "telephone": "57720058"
+    },
+    {
+      "address": "北京市石景山区首钢篮球馆B1层",
+      "name": "首钢溜冰场",
+      "location": {
+        "lng": "116.198483",
+        "lat": "39.925405"
+      },
+      "telephone": "88297314|88297315"
+    },
+    {
+      "address": "首钢篮球馆B1层",
+      "name": "首钢蓝球中心轮滑畅玩",
+      "location": {
+        "lng": "116.198975",
+        "lat": "39.925474"
+      },
+      "telephone": "88297314|88297315"
+    }
+  ],
+  "status": "0"
+}
+```
 #### 2、智能推荐
 #### 3、人脸识别
 部分场馆可人脸识别入馆。
