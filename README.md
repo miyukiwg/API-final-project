@@ -39,6 +39,7 @@ Agile——运动场馆预约助手，是一款通过调用全国运动场馆位
 #### 3、产品结构图
 ![产品结构图](https://github.com/miyukiwg/API-final-project/blob/main/img/产品结构图.png)
 #### 4、预定业务流程图
+![预定业务流程图](https://github.com/miyukiwg/API-final-project/blob/main/img/预定业务流程图.png)
 ### （二）创建
 #### 1、功能列表
 结合价值主张画布和以上结构图、流程图列出的Agile功能列表：
