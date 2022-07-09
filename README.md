@@ -239,7 +239,8 @@ Agile——运动场馆预约助手，是一款通过调用全国运动场馆位
    </tr>
 </table>
 
-#### 2、原型界面描述
+#### 2、原型页面描述
+![交互原型体验](https://a6xovp.axshare.com/)
 
 #### 3、原型页面流程图
 ![原型页面流程图](https://github.com/miyukiwg/API-final-project/blob/main/img/界面流程图.png)
