@@ -413,4 +413,9 @@ if (content):
 
 移动互联网开发课程能够帮助我们学习移动互联网产品的开发，通过完成这一个项目的开发，我了解到要开发一个产品的准备工作是十分复杂的。学无止境，我们应该主动学习更多相关知识，并学会更熟练地运用他们。
 
-参考链接：
+#### 参考
+![许智超老师的Gitee](https://gitee.com/xzhichao)
+![阿里云](https://www.aliyun.com/?spm=5176.product-detail.J_3207526240.1.43f8433d8rRZNU)
+![CSDN](https://www.aliyun.com/?spm=5176.product-detail.J_3207526240.1.43f8433d8rRZNU)
+![人人都是产品经理](https://www.woshipm.com)
+
