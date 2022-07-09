@@ -50,12 +50,7 @@ Agile——运动场馆预约助手，是一款通过调用全国运动场馆位
       <td>功能描述</td>
    </tr>
    <tr>
-      <td rowspan="6" style="text-align:center;">首页</td>
-      <td style="text-align:center;">Flash广告</td>
-      <td></td>
-      <td>显示最近的热点新闻</td>
-   </tr>
-   <tr>
+      <td rowspan="5" style="text-align:center;">首页</td>
       <td style="text-align:center;">地区选择</td>
       <td></td>
       <td>根据用户所在地区推荐附近场馆</td>
